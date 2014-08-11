@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Выбор тура</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="img/Photos/favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Add your site or application content here -->
+    <!-- Fixed navbar -->
+        <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle nav-btn-custom" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="index.html"><i class="fa fa-paper-plane-o fa-2x"></i> Poleteli</a>
+              
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav nav-justified">
+                <li><a href="index.html"> Главная </a></li>
+                
+                <li class="dropdown"><a href="#aboutUs" class="dropdown-toggle" data-toggle="dropdown"> О нас <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="about us.html#about">История компании</a></li>
+                    <li class="divider"></li>
+                    <li><a href="about us.html#about">Рабочий персонал</a></li>
+                    <li class="divider"></li>
+                    <li><a href='about us.html#carousel'>Фотогалерея</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown active"><a href="#tours" class="dropdown-toggle" data-toggle="dropdown"> Туры <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class='active'><a href="tours.html">Выбрать тур</a></li>
+                    <li class="divider"></li>
+                    <li><a href="review.html">Отзывы</a></li>
+                  </ul>
+                </li>
+
+
+                <li class="dropdown">
+                  <a href="#countries" class="dropdown-toggle" data-toggle="dropdown"> Страны <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="countries.html#europe">Европа</a></li>
+                    <li class="divider"></li>
+                    <li><a href="countries.html#asia">Азия</a></li>
+                    <li class="divider"></li>
+                    <li><a href="countries.html#america">Америка</a></li>
+                    <li class="divider"></li>
+                    <li><a href="countries.html#africa">Африка</a></li>
+                  </ul>
+                </li>
+                <li> <a href="contact.html"> Контакты </a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+<!-- Tours content -->
+<div class="container pad-top2">
+    <div class="row">
+      <!-- Form -->
+        <div class="col-sm-3">
+          <form class="form-horizontal" role="form">
+            <div class='form-group'><select class="form-control">
+                        <option disabled selected>Выбор страны</option>
+                        <option value='egypt'>Египет</option>
+                        <option value='kenya'>Кения</option>
+                        <option value='france'>Франция</option>
+                        <option value='maldives'>Мальдивы</option>
+                        </select></div>
+            <!-- hotels -->
+            <div class='form-group'><select class="form-control">
+                        <option disabled selected>Выбор отеля</option>
+                        <option value='5'>5 звезд</option>
+                        <option value='4'>4 звезды</option>
+                        <option value='3'>3 звезды</option>
+                        <option value='2'>2 звезды</option>
+                        </select></div>
+            <!-- meal -->
+            <div class='form-group'><select class="form-control">
+                        <option disabled selected>Питание</option>
+                        <option value='3'>з раза</option>
+                        <option value='2'>2 раза</option>
+                        <option value='1'>1 раз</option>
+                        </select></div>
+            <!-- calendar -->
+            <div class="form-group">
+              <label for="dates">Даты</label>
+              <input type="date" min='2014-07-01' max='2014-08-31' class="form-control" id="dates" placeholder="Enter date">
+            </div>
+            <!-- people -->
+            <div class="form-group">
+              <label for="people">Кол-во людей</label>
+              <input type="number" min='1' class="form-control" id="people" placeholder="Кол-во людей">
+            </div>
+            <div class="form-group">
+              <input type='submit' class="form-control btn btn-warning" id="submit" value='отправить запрос'>
+            </div>
+          </form>
+        </div>
+      <!-- Tours -->
+        <div class="col-sm-9">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Египет</h3>
+              </div>
+            <div class="panel-body">
+              <h3>Египет <span class="badge yellow-bkg">4200грн.</span></h3>
+              <div class="col-sm-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vero aliquid consequatur aperiam at quaerat id dicta consectetur, nam ducimus reprehenderit reiciendis fuga placeat fugiat, incidunt sequi? In, commodi, quisquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus pariatur vero inventore dolorem? Quaerat, laboriosam!
+                        <hr>
+                        <!-- Review -->
+                          <div class="row">
+                            <div class="col-xs-3">
+                              <img class="img-circle img-responsive" src="img/users/user-1.png" alt="">
+                              <p>Paul, manager</p>
+                            </div>
+                            <div class="col-xs-9">
+                              <blockquote class="brd-clr brd3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores consequuntur, nostrum iste magni laborum accusamus. Sit vitae harum asperiores.</blockquote>
+                            </div>
+                            <a href='review.html'><button class="pull-right btn btn-info btn-sm">все отзывы</button></a>
+                          </div></div>
+                          <div class="col-sm-4"><img class="img-responsive img-thumbnail img-fixed-height" alt="Responsive image" src="img/countries/Egypt.jpg" alt=""></div>
+                      </div>        
+          </div><!-- end panel -->
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Мальдивы</h3>
+              </div>
+            <div class="panel-body">
+              <h3>Мальдивы <span class="badge yellow-bkg">14200грн.</span></h3>
+              <div class="col-sm-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vero aliquid consequatur aperiam at quaerat id dicta consectetur, nam ducimus reprehenderit reiciendis fuga placeat fugiat, incidunt sequi? In, commodi, quisquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus pariatur vero inventore dolorem? Quaerat, laboriosam!
+                        <hr>
+                        <!-- Review -->
+                          <div class="row">
+                            <div class="col-xs-3">
+                              <img class="img-circle img-responsive" src="img/users/user-2.jpeg" alt="">
+                              <p>John, programmer</p>
+                            </div>
+                            <div class="col-xs-9">
+                              <blockquote class="brd-clr brd3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores consequuntur, nostrum iste magni laborum accusamus. Sit vitae harum asperiores.</blockquote>
+                            </div>
+                            <a href='review.html'><button class="pull-right btn btn-info btn-sm">все отзывы</button></a>
+                          </div></div>
+                          <div class="col-sm-4"><img class="img-responsive img-thumbnail img-fixed-height" alt="Responsive image" src="img/countries/maldives.jpg" alt=""></div>
+                      </div>        
+          </div><!-- end panel -->
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Кения</h3>
+              </div>
+            <div class="panel-body">
+              <h3>Кения<span class="badge yellow-bkg">7300грн.</span></h3>
+              <div class="col-sm-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vero aliquid consequatur aperiam at quaerat id dicta consectetur, nam ducimus reprehenderit reiciendis fuga placeat fugiat, incidunt sequi? In, commodi, quisquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus pariatur vero inventore dolorem? Quaerat, laboriosam!
+                        <hr>
+                        <!-- Review -->
+                          <div class="row">
+                            <div class="col-xs-3">
+                              <img class="img-circle img-responsive" src="img/users/user-4.jpg" alt="">
+                              <p>Julia, photographer</p>
+                            </div>
+                            <div class="col-xs-9">
+                              <blockquote class="brd-clr brd3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores consequuntur, nostrum iste magni laborum accusamus. Sit vitae harum asperiores.</blockquote>
+                            </div>
+                            <a href='review.html'><button class="pull-right btn btn-info btn-sm">все отзывы</button></a>
+                          </div></div>
+                          <div class="col-sm-4"><img class="img-responsive img-thumbnail img-fixed-height" alt="Responsive image" src="img/countries/kenya.jpg" alt=""></div>
+                      </div>        
+          </div><!-- end panel -->
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class='active'><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul> <!-- end pagination -->
+
+        </div>
+
+        
+        </div>
+    </div>
+</div>
+
+
+
+<!-- End of content -->
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container pad-top">
+      <div class="row row-table">
+        <div class="col-sm-4 col-table-cell col-left-border hidden-xs">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-sm-4 col-table-cell col-left-border wide-sm">
+          <ul class="wide-input no-style-list custom-list">
+            <li><a href="">
+              Link1
+            </a></li>
+            <li><a href="">Link2</a></li>
+            <li><a href="">Link3</a></li>
+            <li><a href="">Link4</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-table-cell col-left-border hidden-xs">
+          <!-- contact form -->
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control wide-input" id="inputEmail3" placeholder="e-mail">
+              </div>
+            </div>
+            
+            <div class="form-group pad-top wide-input">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copy-r">&copy; Travel company 2014</div>
+  </footer>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+    </body>
+</html>
